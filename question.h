@@ -14,6 +14,12 @@ class Question {
         std::string questionText;
         std::string answerText;
         bool asked;
-}
+};
+
+class Choices {
+    public:
+        Choices(const std::vector<std::string>& choices);
+        void displayChoices() const;
+};
 
 #endif // QUESTION_H

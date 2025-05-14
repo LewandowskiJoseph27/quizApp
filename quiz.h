@@ -13,6 +13,13 @@ class Quiz {
         private:
         std::string quizName;
         std::vector<std::string> questions;
+};
+
+class user {
+    public: 
+        user(const std::string& name, int score);
+        void addPoints(int points);
+        void displayScore() const;
 }
 
 
